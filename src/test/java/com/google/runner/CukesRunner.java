@@ -17,7 +17,6 @@ import org.junit.runner.RunWith;
         tags = "@calculator",
         publish = true  //generation a report with public link
 
-
 )
 
 public class CukesRunner {

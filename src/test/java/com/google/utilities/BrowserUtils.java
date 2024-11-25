@@ -44,7 +44,6 @@ public class BrowserUtils {
     public static void waitForInvisibilityOf(WebElement target){
         //Create the object of 'WebDriverWait' class, and set up the constructor args
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-
         //use the 'wait' object with the proper syntax to create explicit wait conditions.
         wait.until(ExpectedConditions.invisibilityOf(target));
     }

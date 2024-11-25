@@ -31,7 +31,6 @@ public class Calculator_StepDef {
     }
     @When("the calculator should be visible")
     public void the_calculator_should_be_visible() {
-
       Assert.assertTrue(basePage.calculator.isDisplayed());
 
     }
@@ -51,7 +50,6 @@ public class Calculator_StepDef {
 
     @When("I press {string}")
     public void i_press(String operator) {
-
         basePage.navigateOperatorButton(operator);
     }
 
@@ -60,14 +58,9 @@ public class Calculator_StepDef {
 
 
     @Then("the result should be {int}")
-
     public void the_result_should_be(int expectedNumber) {
-
        String actualResult = basePage.actualResult.getText();
-
        String expectedResult = String.valueOf(expectedNumber);
-
-
        Assert.assertEquals(expectedResult,actualResult);
 
 
@@ -75,10 +68,8 @@ public class Calculator_StepDef {
 
     @Then("the display should be cleared")
     public void the_display_should_be_cleared() {
-
         String beforeClickingCEButton = basePage.actualResult.getText();
         String afterClickingCEButton = basePage.actualResult.getText();
-
         Assert.assertTrue(afterClickingCEButton.length() <= beforeClickingCEButton.length());
 
 

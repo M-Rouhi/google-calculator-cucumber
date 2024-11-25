@@ -24,25 +24,20 @@ public class BasePage {
     public void navigateDigitButton(int number) {
         String locator = "//div[.='"+ number +"']";
         Driver.getDriver().findElement(By.xpath(locator)).click();
-
     }
 
 
     public void navigateOperatorButton(String operator) {
         String locator = "//div[.='"+operator+"']";
-
         WebElement operatorButton =  Driver.getDriver().findElement(By.xpath(locator));
-
         BrowserUtils.waitForClickablility(operatorButton,10);
         BrowserUtils.waitForVisibility(operatorButton,10);
         operatorButton.click();
-
 
 }
 
     @FindBy(id= "cwos")
     public WebElement actualResult;
-
 
 
     }

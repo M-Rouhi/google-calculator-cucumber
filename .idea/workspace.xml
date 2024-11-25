@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bacbd3bb-647c-4f0e-9d8f-f11c0a5d4228" name="Changes" comment="adding negative test case" />
+    <list default="true" id="bacbd3bb-647c-4f0e-9d8f-f11c0a5d4228" name="Changes" comment="adding negative test case">
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/google/pages/BasePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/pages/BasePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/google/runner/CukesRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/runner/CukesRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/google/step_definitions/Calculator_StepDef.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/step_definitions/Calculator_StepDef.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/google/utilities/BrowserUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/google/utilities/BrowserUtils.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -133,7 +138,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732504778476</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adding negative test case">
+      <option name="closed" value="true" />
+      <created>1732505057960</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1732505057960</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

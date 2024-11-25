@@ -22,7 +22,6 @@ public class Calculator_StepDef {
     public void i_am_on_the_google_search_page() {
         Driver.getDriver().get(ConfigurationReader.getProperty("url"));
 
-
     }
     @When("I search for {string}")
     public void i_search_for(String string) {
@@ -32,7 +31,6 @@ public class Calculator_StepDef {
     @When("the calculator should be visible")
     public void the_calculator_should_be_visible() {
       Assert.assertTrue(basePage.calculator.isDisplayed());
-
     }
 
 
@@ -42,9 +40,7 @@ public class Calculator_StepDef {
        for (char digit : numberStr.toCharArray()){
            int digitValue = Character.getNumericValue(digit);
             basePage.navigateDigitButton(digitValue);
-
         }
-
     }
 
 
@@ -53,17 +49,11 @@ public class Calculator_StepDef {
         basePage.navigateOperatorButton(operator);
     }
 
-
-
-
-
     @Then("the result should be {int}")
     public void the_result_should_be(int expectedNumber) {
        String actualResult = basePage.actualResult.getText();
        String expectedResult = String.valueOf(expectedNumber);
        Assert.assertEquals(expectedResult,actualResult);
-
-
     }
 
     @Then("the display should be cleared")
@@ -71,8 +61,6 @@ public class Calculator_StepDef {
         String beforeClickingCEButton = basePage.actualResult.getText();
         String afterClickingCEButton = basePage.actualResult.getText();
         Assert.assertTrue(afterClickingCEButton.length() <= beforeClickingCEButton.length());
-
-
     }
 
     @Then("the result should be {string}")

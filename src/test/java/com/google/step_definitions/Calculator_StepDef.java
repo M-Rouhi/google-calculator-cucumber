@@ -80,7 +80,14 @@ public class Calculator_StepDef {
         String afterClickingCEButton = basePage.actualResult.getText();
 
         Assert.assertTrue(afterClickingCEButton.length() <= beforeClickingCEButton.length());
-        // Write code here that turns the phrase above into concrete actions
+
+
+    }
+
+    @Then("the result should be {string}")
+    public void the_result_should_be(String expectedResult) {
+        String actualResult =basePage.actualResult.getText();
+        Assert.assertEquals(expectedResult,actualResult);
 
     }
 }

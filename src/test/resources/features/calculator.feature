@@ -34,3 +34,10 @@ Feature: Calculator
     And I enter 4
     And I press "="
     Then the result should be 14
+
+    Scenario: Division by zero
+      When I enter 17
+      And I press "÷"
+      And I enter 0
+      And I press "="
+      Then the result should be "Infinity"

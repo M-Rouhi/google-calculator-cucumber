@@ -9,10 +9,11 @@ import java.time.Duration;
 
 public class BrowserUtils {
 
-    public static WebElement waitForVisibility(By locator, int time) {
+    public static WebElement waitForVisibility(WebElement element, int time) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(time));
-        return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+        return wait.until(ExpectedConditions.visibilityOf(element));
     }
+
 
     /**
      * Waits for provided element to be clickable

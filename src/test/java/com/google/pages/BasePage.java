@@ -33,12 +33,12 @@ public class BasePage {
 
         WebElement operatorButton =  Driver.getDriver().findElement(By.xpath(locator));
 
-        BrowserUtils.waitForClickablility(operatorButton,20);
+        BrowserUtils.waitForClickablility(operatorButton,10);
+        BrowserUtils.waitForVisibility(operatorButton,10);
         operatorButton.click();
 
 
 }
-
 
     @FindBy(id= "cwos")
     public WebElement actualResult;
